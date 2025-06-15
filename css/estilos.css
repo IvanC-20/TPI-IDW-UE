@@ -1,0 +1,109 @@
+/*----------------Estilos generales------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+  padding: 0;
+  margin-top: 80px;
+
+}
+
+html, #body-login{ height: 100%; }
+
+/*Borro estilos sobrantes de header*/
+
+/*-----------------------Nav-------------------*/
+
+nav ul li a:hover {
+  color: #7f9bb3;
+  background-color: #ffc107;
+  border-radius: 5px;
+}
+
+
+/*----------------Contenedor principal----------*/
+
+main {
+  padding-top: 60px;
+}
+
+/*---------------Galeria-----------------------*/
+
+#galeria .card:hover, #card-login:hover, #card-salon:hover {
+  transform: scale(1.10);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  transition-duration: 0.4s, 0.6s;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.main-institucional {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  margin: 10px 100px 160px 100px;
+}
+
+/* Tarjetas */
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  transition: transform 0.4s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card-body {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-body {
+  transform: translateY(-5px);
+}
+
+.card:hover {
+  border: 1px solid #fd7e14;
+}
+
+/* Animación pulsante */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*-----------Altura textArea---------*/
+
+#floatingTextareaContacto {
+  height: 13rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #floatingTextareaContacto {
+    height: 19.5rem;
+  }
+}

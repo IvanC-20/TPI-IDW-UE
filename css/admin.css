@@ -1,0 +1,13 @@
+* {
+    color: #fff;
+}
+body {
+    background-color: #1d2630;
+}
+#Update {
+    display: none;
+}
+
+select option{
+    color:#1d2630;
+}

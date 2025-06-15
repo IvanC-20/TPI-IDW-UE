@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <!-- CSS de AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <title>Web Reservas Salón</title>
+</head>
+
+<!--Carga de scripts-->
+<script src="js/nav.js"></script>
+<script src="js/galeria.js"></script>
+<script src="js/bootstrap/popper.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+
+<!-- AOS Init -->
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  });
+</script>
+
+<body class="d-flex flex-column min-vh-100">
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">IDW SA - Reserva de salón de eventos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-lg-3">
+              <a class="btn btn-warning btn-lg nav-btn-lg d-none d-lg-inline-block" href="index.html">Inicio</a>
+              </br>
+              <a class="nav-link d-lg-none p-2" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="btn btn-outline-warning btn-lg nav-btn-lg d-none d-lg-inline-block"
+                href="institucional.html">Institucional</a>
+              <a class="nav-link d-lg-none p-2" href="institucional.html">Institucional</a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="btn btn-outline-warning btn-lg nav-btn-lg d-none d-lg-inline-block"
+                href="contacto.html">Contacto</a>
+              <a class="nav-link d-lg-none p-2" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item ">
+              <a class="btn btn-outline-warning btn-lg nav-btn-lg d-none d-lg-inline-block"
+                href="admin.html">Administrar</a>
+              <a class="nav-link d-lg-none p-2" href="admin.html">Administrar</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-fill">
+
+    <section id="galeria" class="pt-2 py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Nuestros Salones</h2>
+        <div class="row g-5 justify-content-center" id="galeriaSalones">
+          <!-- Salones -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="text-center text-muted py-4 border-top">
+    Todos los derechos reservados - 2025
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="descripcionModal" tabindex="-1" aria-labelledby="descripcionModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content shadow-lg">
+        <div class="modal-header bg-warning text-dark">
+          <h5 class="modal-title w-100 text-center m-0" id="descripcionModalLabel">Detalle del salón</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div id="modalContenido"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
